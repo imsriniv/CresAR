@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+    
+    >
+   
+     <PreferenceCategory
+                android:title="Configuration" 
+               
+                
+                >
+                
+         <ListPreference
+                        android:title="Location Radius"
+                        android:summary="This preference allows you to set location radius filter"
+                        android:key="listPref"
+                        android:defaultValue="100"
+                        android:entries="@array/radius_array"
+                        android:entryValues="@array/radius_values" />
+         
+          <ListPreference
+                        android:title="Angle"
+                        android:summary="This preference allows you to set location angle filter"
+                        android:key="listPref1"
+                        android:defaultValue="15"
+                        android:entries="@array/angle_array"
+                        android:entryValues="@array/angle_values" />
+                 </PreferenceCategory>
+       
+</PreferenceScreen>
